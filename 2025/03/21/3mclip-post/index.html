@@ -30,7 +30,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://alexc-l.github.io/images/redefine-og.webp">
 <meta property="article:published_time" content="2025-03-21T08:58:36.000Z">
-<meta property="article:modified_time" content="2025-03-21T11:17:47.728Z">
+<meta property="article:modified_time" content="2025-03-21T12:05:41.784Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="announcement">
 <meta property="article:tag" content="paper">
@@ -499,8 +499,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2025-03-21 19:17:47</span>
-            <span class="mobile">2025-03-21 19:17:47</span>
+            <span class="desktop">2025-03-21 20:05:41</span>
+            <span class="mobile">2025-03-21 20:05:41</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -638,14 +638,14 @@
 <li>Enhances semantic similarity between different modalities (text and images)</li>
 <li>Improves cross-modal interactions in the model</li>
 </ol>
-<h3 id="pecific-Disambiguation-Strategies"><a href="#pecific-Disambiguation-Strategies" class="headerlink" title="pecific Disambiguation Strategies"></a>pecific Disambiguation Strategies</h3><p>We implemented three primary strategies for handling uncertain labels:</p>
-<div class="tabs" id="tab-页面内不重复的id"><ul class="nav-tabs"><li class="tab active"><a class="#页面内不重复的id-1">U-Ones Method</a></li><li class="tab"><a class="#页面内不重复的id-2">U-SelfTrained Method</a></li><li class="tab"><a class="#页面内不重复的id-3">U-MultiClass Method</a></li></ul><div class="tab-content"><div class="tab-pane active" id="页面内不重复的id-1"><p>This approach maps all uncertain labels to 1, effectively treating them as positive cases. This simple strategy helps maintain data balance but may introduce some false positives.</p></div><div class="tab-pane" id="页面内不重复的id-2"><p>This semi-supervised approach:</p>
+<h3 id="Specific-Disambiguation-Strategies"><a href="#Specific-Disambiguation-Strategies" class="headerlink" title="Specific Disambiguation Strategies"></a>Specific Disambiguation Strategies</h3><p>We implemented three primary strategies for handling uncertain labels:</p>
+<div class="tabs" id="tab-tab-strategy"><ul class="nav-tabs"><li class="tab active"><a class="#tab-strategy-1">U-Ones Method</a></li><li class="tab"><a class="#tab-strategy-2">U-SelfTrained Method</a></li><li class="tab"><a class="#tab-strategy-3">U-MultiClass Method</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-strategy-1"><p>This approach maps all uncertain labels to 1, effectively treating them as positive cases. This simple strategy helps maintain data balance but may introduce some false positives.</p></div><div class="tab-pane" id="tab-strategy-2"><p>This semi-supervised approach:</p>
 <ol>
 <li>Initially trains the model while ignoring uncertain labels</li>
 <li>Uses the trained model to predict labels for uncertain cases</li>
 <li>Incorporates these predicted probabilities as new labels for further training</li>
 </ol>
-<p>This method leverages the model’s own predictions to handle uncertainty while maintaining flexibility.</p></div><div class="tab-pane" id="页面内不重复的id-3"><p>This strategy treats uncertain labels as a separate category. The model outputs probabilities for three classes (0, 1, and uncertain) for each observation, allowing it to explicitly account for label uncertainty in its predictions.</p></div></div></div>
+<p>This method leverages the model’s own predictions to handle uncertainty while maintaining flexibility.</p></div><div class="tab-pane" id="tab-strategy-3"><p>This strategy treats uncertain labels as a separate category. The model outputs probabilities for three classes (0, 1, and uncertain) for each observation, allowing it to explicitly account for label uncertainty in its predictions.</p></div></div></div>
 
 <h2 id="Training-Methodology"><a href="#Training-Methodology" class="headerlink" title="Training Methodology"></a>Training Methodology</h2><ol>
 <li><strong>Training Objectives</strong>:<ul>
@@ -717,7 +717,7 @@
         
             <li>
                 <strong>Updated at
-                    :</strong> 2025-03-21 19:17:47
+                    :</strong> 2025-03-21 20:05:41
             </li>
         
         <li>
@@ -854,7 +854,7 @@
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
 		<div class="page-title">Decoupled Contrastive Learning for Multilingual Multimodal Medical Pre-trained Model</div>
-		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#The-Challenge-Multilingual-and-Multimodal-Medical-Data"><span class="nav-text">The Challenge: Multilingual and Multimodal Medical Data</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Our-Solution-3M-CLIP-Model"><span class="nav-text">Our Solution: 3M-CLIP Model</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-Augmentation-with-Translation"><span class="nav-text">Data Augmentation with Translation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Model-Architecture"><span class="nav-text">Model Architecture</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Targeted-Label-Disambiguation"><span class="nav-text">Targeted Label Disambiguation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#pecific-Disambiguation-Strategies"><span class="nav-text">pecific Disambiguation Strategies</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Training-Methodology"><span class="nav-text">Training Methodology</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Loss-Function-specifics"><span class="nav-text">Loss Function specifics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unified-Multilingual-Multimodal-Framework"><span class="nav-text">Unified Multilingual Multimodal Framework</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Experimental-Results"><span class="nav-text">Experimental Results</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Medical-Image-Classification"><span class="nav-text">Medical Image Classification</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Zero-Shot-Classification"><span class="nav-text">Zero-Shot Classification</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fine-Tuned-Classification"><span class="nav-text">Fine-Tuned Classification</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Multilingual-Image-Text-Retrieval"><span class="nav-text">Multilingual Image-Text Retrieval</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Why-This-Matters"><span class="nav-text">Why This Matters</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Future-Directions"><span class="nav-text">Future Directions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Conclusion"><span class="nav-text">Conclusion</span></a></li></ol>
+		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#The-Challenge-Multilingual-and-Multimodal-Medical-Data"><span class="nav-text">The Challenge: Multilingual and Multimodal Medical Data</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Our-Solution-3M-CLIP-Model"><span class="nav-text">Our Solution: 3M-CLIP Model</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-Augmentation-with-Translation"><span class="nav-text">Data Augmentation with Translation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Model-Architecture"><span class="nav-text">Model Architecture</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Targeted-Label-Disambiguation"><span class="nav-text">Targeted Label Disambiguation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Specific-Disambiguation-Strategies"><span class="nav-text">Specific Disambiguation Strategies</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Training-Methodology"><span class="nav-text">Training Methodology</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Loss-Function-specifics"><span class="nav-text">Loss Function specifics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unified-Multilingual-Multimodal-Framework"><span class="nav-text">Unified Multilingual Multimodal Framework</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Experimental-Results"><span class="nav-text">Experimental Results</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Medical-Image-Classification"><span class="nav-text">Medical Image Classification</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Zero-Shot-Classification"><span class="nav-text">Zero-Shot Classification</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fine-Tuned-Classification"><span class="nav-text">Fine-Tuned Classification</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Multilingual-Image-Text-Retrieval"><span class="nav-text">Multilingual Image-Text Retrieval</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Why-This-Matters"><span class="nav-text">Why This Matters</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Future-Directions"><span class="nav-text">Future Directions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Conclusion"><span class="nav-text">Conclusion</span></a></li></ol>
 
 	</div>
 </div>
